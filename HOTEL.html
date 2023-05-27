@@ -1,0 +1,326 @@
+<!DOCTYPE html> 
+<html>
+   <lang="en-US">
+      <head>
+         <title> HOTEL INFERNO </title>
+         <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+         <meta charset="utf-8">
+         <meta name="Author" content="Jino Estillore">
+         <meta name="Description" content="This is a Hotel that offers affortable rooms and will accommodate customers 24/7.">
+         
+<style>
+   
+   body {
+   
+   margin: 0px;
+   }
+   
+   .container {
+   
+   margin: auto;
+   width: 100%;
+   overflow: hidden;
+   border: 3px solid black;
+   }
+
+   header {
+   
+   background: linear-gradient(#ff4900, #ff5f55, #ffb380);
+   }
+   
+   header h1 {
+   
+   text-align: center;
+   font-family: serif;
+   font-weight: bold;
+   margin: 0px;
+   }
+   
+   header p {
+   
+   text-align: center;
+   font-weight: bold;
+   margin: 0px;
+   }
+   
+   nav {
+   
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   background: linear-gradient(#ffb381, #544d4d, #171515);
+   border-bottom: 5px solid maroon;
+   }
+   
+   ul {
+   
+   margin: 0px;
+   padding: 0px;
+   }
+   
+   nav li {
+   
+   display: inline;
+   margin: 0px 5px 0px 0px;
+   }
+   
+   nav a {
+   
+   text-decoration: none;
+   color: #a10d0d;
+   padding: 5px;
+   font-weight: bold;
+   font-size: 25px;
+   border: 3px ridge grey;
+   }
+   
+   a:hover {
+   
+   background-color: silver;
+   padding: 10px;
+   font-size: 35px;
+   }
+   
+   a:active {
+   
+   background-color: red;
+   padding: 10px;
+   }
+   
+   section {
+   
+   background: url("hotel.jpg") no-repeat;
+   background-size: cover;
+   height: 250px;
+   border-top: 3px solid orange;
+   border-bottom: 3px solid orange;
+   }
+   
+   section p {
+   
+   line-height: 1.5;
+   font-family: serif;
+   color: #810b0b;
+   margin: 0px;
+   text-align: center;
+   font-size: 35px;
+   }
+   
+   article {
+   
+   border-top: 4px solid maroon;
+   background:linear-gradient(#ff4a2b,#ff9340,#ffc880);
+   }
+   
+   article p {
+   
+   margin: 5px;
+   text-align: center;
+   font-size: 12px;
+   }
+   
+   article h2 {
+   
+   margin: 5px 0px 2px 0px;
+   }
+   
+   textarea {
+   
+   text-align: center;
+   width: 70%;
+   height: 50px;
+   cursor: text;
+   border: 2px ridge black;
+   }
+   
+   .buTTon {
+   
+   margin-bottom: 5px;
+   padding: 10px;
+   border-radius: 20px;
+   border: 2px ridge grey;
+   color: red;
+   font-size: 25px;
+   font-weight: bold;
+   background: linear-gradient(#ffd26a, #ff892b);
+   cursor: auto;
+   }
+   
+   .buTTon:hover {
+   
+   background: linear-gradient(orange, yellow);
+   padding: 13px;
+   }
+   
+   footer {
+   
+   background: linear-gradient(#ff5e00, #ff7300, #99998c, #575050);
+   border-top: 5px solid maroon;
+   }
+   
+   footer p {
+   
+   margin: 0px;
+   text-align: center;
+   font-weight: bold;
+   }
+   
+   #animationX {
+   
+   webkit-animation-name: it;
+   webkit-animation-duration: 60s;
+   animation-name: it;
+   animation-duration: 2s;
+   animation-iteration-count: 99;
+   }
+   
+   @keyframes it {
+   
+   0%   {color: black;}
+   20%  {color: white;}
+   50%  {color: red;}
+   80%  {color: orange;}
+   100% {color: yellow;}
+   }
+   
+   #animationIX {
+   
+   webkit-animation-name: itIX;
+   webkit-animation-duration: 60s;
+   animation-name: itIX;
+   animation-duration: 2s;
+   animation-iteration-count: 99;
+   }
+   
+   @keyframes itIX {
+   
+   0%   {color: black;}
+   20%  {color: white;}
+   50%  {color: green;}
+   80%  {color: blue;}
+   100% {color: indigo;}
+   }
+   
+   #animationXI {
+   
+   webkit-animation-name: itXI;
+   webkit-animation-duration: 60s;
+   animation-name: itXI;
+   animation-duration: 2s;
+   animation-iteration-count: 99;
+   }
+   
+   @keyframes itXI {
+   
+   0%   {color: black;}
+   20%  {color: white;}
+   50%  {color: yellow;}
+   80%  {color: green;}
+   100% {color: orange;}
+   }
+   
+   #animationXII {
+   
+   webkit-animation-name: itXII;
+   webkit-animation-duration: 60s;
+   animation-name: itXII;
+   animation-duration: 2s;
+   animation-iteration-count: 99;
+   }
+   
+   @keyframes itXII {
+   
+   0%   {color: black;}
+   20%  {color: white;}
+   50%  {color: black;}
+   80%  {color: white;}
+   100% {color: black;}
+   }
+   
+   img {
+   
+   border-radius: 50px;
+   margin-top: 10px;
+   border-top: 5px dotted orange;
+   border-bottom: 5px solid orange;
+   border-right: 5px dashed maroon;
+   border-left: 5px dashed maroon;
+   box-shadow: 0px 1px 35px white;
+   }
+   
+   
+   
+</style>
+
+<body>
+   <div class="container">
+      
+   <header>
+         <center>
+      <img src="inferno.jpg" width="55px" height="55px" alt="Inferno Logo">
+         </center>
+         
+      <h1>
+         <span style="color: maroon;"> HOTEL </span>
+         <span style="color: #ffd215;"> INFERNO </span>
+      </h1>
+      
+         <p><i> Your Second Home in All Places. </i></p>
+       <br />
+   </header>
+   
+   <nav>
+      <br />
+      <br />
+      <br />
+      <br />
+      <ul>
+      <li><a href="#HOME" id="animationX"> HOME </a></li>
+      <li><a href="#ROOMS" id="animationIX"> ROOMS </a></li>
+      <li><a href="#CONTACTS" id="animationXI"> CONTACTS </a></li>
+      </ul>
+   </nav>
+   
+   <section>
+      <br />
+      <br />
+      <p><b> Check-in our Hotel and choose your desire rooms in affordable prices. </b></p>
+   </section>
+
+   <article>
+      <br />
+      <p><strong> We serve the best and genuine hospitality in accommodating our dearests customers. Our hotel received various of feedbacks that will give you an idea of how good our service here in our Hotel. </strong></p>
+      <br />
+      
+      <center>
+     <div style="border: 4px solid orange;
+                 width: 70%;">
+      <div style="border: 5px solid maroon;
+                  width: auto;
+                  background: linear-gradient(#ff5e00, #ff9e55); ">
+      <h2 id="animationXII" style="color: maroon;">Send your Feedbacks. </h2>
+      <textarea contenteditable="true" spellcheck="true"> Send us your feedbacks here..
+      </textarea>
+      <br />
+      
+      <button class="buTTon" onclick="alert('SUBMITTED')"> SEND </button>
+     
+      </div>
+       </div>
+      </center>
+      
+      <p style="color: maroon;"><b> SOCIAL MEDIA ACCOUNT: Inferno Hotel </b></p>
+      <p style="color: maroon;"><b> EMAIL: Hotelinferno@gmail.com </b></p>
+      <br />
+   </article>
+   
+   <footer>
+      <br />
+      <p><b> All Rights Reserved || HOTEL INFERNO </b></p>
+      <p id="ftr"><i> Hotel Group of Company </i></p>
+      <br />
+   </footer>
+   
+ </div>
+</body>
+</html>
